@@ -1,4 +1,7 @@
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> b7d3fda1614d3d83255256d8e54818ceb91d4f06
 # Introduction 
 TODO: Give a short introduction of your project. Let this section explain the objectives or the motivation behind this project. 
 
@@ -18,6 +21,7 @@ TODO: Explain how other users and developers can contribute to make your code be
 If you want to learn more about creating good readme files then refer the following [guidelines](https://docs.microsoft.com/en-us/azure/devops/repos/git/create-a-readme?view=azure-devops). You can also seek inspiration from the below readme files:
 - [ASP.NET Core](https://github.com/aspnet/Home)
 - [Visual Studio Code](https://github.com/Microsoft/vscode)
+<<<<<<< HEAD
 - [Chakra Core](https://github.com/Microsoft/ChakraCore)
 =======
 # Getting Started with Create React App
@@ -91,3 +95,6 @@ This section has moved here: [https://facebook.github.io/create-react-app/docs/d
 
 This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
 >>>>>>> f167e6f (Initial commit with production build)
+=======
+- [Chakra Core](https://github.com/Microsoft/ChakraCore)
+>>>>>>> b7d3fda1614d3d83255256d8e54818ceb91d4f06
