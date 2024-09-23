@@ -4,16 +4,9 @@ import Arrow from "./assets/Arrow";
 import ClipPath from "./assets/ClipPath";
 import brackets from "./assets/benefits/Brackets";
 
-import benefitCard1 from "./assets/benefits/card-1.svg";
-import benefitCard2 from "./assets/benefits/card-2.svg";
-import benefitCard3 from "./assets/benefits/card-3.svg";
-import benefitCard4 from "./assets/benefits/card-4.svg";
-import benefitCard5 from "./assets/benefits/card-5.svg";
-import benefitCard6 from "./assets/benefits/card-6.svg";
 import benefitIcon1 from "./assets/benefits/icon-1.svg";
 import benefitIcon2 from "./assets/benefits/icon-2.svg";
 import benefitIcon3 from "./assets/benefits/icon-3.svg";
-import benefitIcon4 from "./assets/benefits/icon-4.svg";
 import benefitImage2 from "./assets/benefits/image-2.png";
 
 const TagLine = ({ className, children }) => {

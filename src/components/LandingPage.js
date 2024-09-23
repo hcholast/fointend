@@ -1,7 +1,7 @@
 import React, { useEffect, useRef } from 'react';
 import { Link, useNavigate } from 'react-router-dom';
 import { FaRobot, FaUserFriends, FaRegSmileBeam } from 'react-icons/fa';
-import { BackgroundCircles, BottomLine, Gradient } from "./design/Hero";
+import { BackgroundCircles, BottomLine } from "./design/Hero";
 import { ScrollParallax } from "react-just-parallax";
 import Notification from "./design/Notification";
 import Terminal from './design/Terminal'; // Import Terminal component
