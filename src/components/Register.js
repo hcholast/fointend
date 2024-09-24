@@ -18,7 +18,7 @@ function Register() {
   const handleSubmit = async (e) => {
     e.preventDefault();
     try {
-      await axios.post('http://localhost:5000/register', { username, email, password });
+      await axios.post('http://hcholast.pythonanywhere.com/register', { username, email, password });
       alert('Registration successful! You can now log in.');
       navigate('/login'); // Redirect to login page after successful registration
     } catch (err) {
@@ -29,7 +29,7 @@ function Register() {
 
   // Handle Google OAuth registration
   function handleGoogleRegister() {
-    window.location.href = "http://localhost:5000/auth/google";
+    window.location.href = "http://hcholast.pythonanywhere.com/auth/google";
   }
 
   return (

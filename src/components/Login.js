@@ -19,7 +19,7 @@ function Login({ setAuth }) {
     e.preventDefault();
     try {
       // Make a POST request to the login endpoint with the username and password
-      const response = await axios.post('http://localhost:5000/login', { username, password });
+      const response = await axios.post('http://hcholast.pythonanywhere.com/login', { username, password });
 
       // If the login is successful, store the JWT token in localStorage
       localStorage.setItem('token', response.data.access_token);
@@ -37,7 +37,7 @@ function Login({ setAuth }) {
 
   // Handle Google OAuth login
   function handleGoogleLogin() {
-    window.location.href = "http://localhost:5000/auth/google";
+    window.location.href = "http://hcholast.pythonanywhere.com/auth/google";
   }
 
   return (

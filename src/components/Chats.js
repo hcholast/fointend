@@ -23,7 +23,7 @@ function Chats() {
     const fetchSessions = async () => {
       try {
         const token = localStorage.getItem('token');
-        const response = await axios.get('http://localhost:5000/sessions', {
+        const response = await axios.get('http://hcholast.pythonanywhere.com/sessions', {
           headers: { Authorization: `Bearer ${token}` },
         });
         setSessions(response.data);
@@ -39,7 +39,7 @@ function Chats() {
       if (selectedSessionId) {
         try {
           const token = localStorage.getItem('token');
-          const response = await axios.get(`http://localhost:5000/session/${selectedSessionId}`, {
+          const response = await axios.get(`http://hcholast.pythonanywhere.com/session/${selectedSessionId}`, {
             headers: { Authorization: `Bearer ${token}` },
           });
           setChatHistory(response.data);
@@ -65,7 +65,7 @@ function Chats() {
   const handleStartNewSession = async () => {
     try {
       const token = localStorage.getItem('token');
-      const response = await axios.post('http://localhost:5000/start_session', {}, {
+      const response = await axios.post('http://hcholast.pythonanywhere.com/start_session', {}, {
         headers: { Authorization: `Bearer ${token}` },
       });
 
@@ -92,7 +92,7 @@ function Chats() {
 
     try {
       const token = localStorage.getItem('token');
-      const response = await axios.post(`http://localhost:5000/chat/${selectedSessionId}`, { message }, {
+      const response = await axios.post(`http://hcholast.pythonanywhere.com/chat/${selectedSessionId}`, { message }, {
         headers: { Authorization: `Bearer ${token}` },
       });
 
@@ -113,7 +113,7 @@ function Chats() {
   const handleDeleteSession = async (sessionId) => {
     try {
       const token = localStorage.getItem('token');
-      await axios.delete(`http://localhost:5000/delete_session/${sessionId}`, {
+      await axios.delete(`http://hcholast.pythonanywhere.com/delete_session/${sessionId}`, {
         headers: { Authorization: `Bearer ${token}` },
       });
 
