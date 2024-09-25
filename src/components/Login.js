@@ -19,7 +19,7 @@ function Login({ setAuth }) {
     e.preventDefault();
     try {
       // Make a POST request to the login endpoint with the username and password
-      const response = await axios.post('http://chats-d3hvf0cwgdb2dggr.westeurope-01.azurewebsites.net/login', { username, password });
+      const response = await axios.post('http://backend-chats-cgbtehdee7h5cba9.westeurope-01.azurewebsites.net/login', { username, password });
 
       // If the login is successful, store the JWT token in localStorage
       localStorage.setItem('token', response.data.access_token);
@@ -37,7 +37,7 @@ function Login({ setAuth }) {
 
   // Handle Google OAuth login
   function handleGoogleLogin() {
-    window.location.href = "http://chats-d3hvf0cwgdb2dggr.westeurope-01.azurewebsites.net/auth/google";
+    window.location.href = "http://backend-chats-cgbtehdee7h5cba9.westeurope-01.azurewebsites.net/auth/google";
   }
 
   return (
