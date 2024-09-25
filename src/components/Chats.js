@@ -23,7 +23,7 @@ function Chats() {
     const fetchSessions = async () => {
       try {
         const token = localStorage.getItem('token');
-        const response = await axios.get('http://hcholast.pythonanywhere.com/sessions', {
+        const response = await axios.get('http://chats-d3hvf0cwgdb2dggr.westeurope-01.azurewebsites.net/sessions', {
           headers: { Authorization: `Bearer ${token}` },
         });
         setSessions(response.data);
@@ -39,7 +39,7 @@ function Chats() {
       if (selectedSessionId) {
         try {
           const token = localStorage.getItem('token');
-          const response = await axios.get(`http://hcholast.pythonanywhere.com/session/${selectedSessionId}`, {
+          const response = await axios.get(`http://chats-d3hvf0cwgdb2dggr.westeurope-01.azurewebsites.net/session/${selectedSessionId}`, {
             headers: { Authorization: `Bearer ${token}` },
           });
           setChatHistory(response.data);
@@ -65,7 +65,7 @@ function Chats() {
   const handleStartNewSession = async () => {
     try {
       const token = localStorage.getItem('token');
-      const response = await axios.post('http://hcholast.pythonanywhere.com/start_session', {}, {
+      const response = await axios.post('http://chats-d3hvf0cwgdb2dggr.westeurope-01.azurewebsites.net/start_session', {}, {
         headers: { Authorization: `Bearer ${token}` },
       });
 
@@ -92,7 +92,7 @@ function Chats() {
 
     try {
       const token = localStorage.getItem('token');
-      const response = await axios.post(`http://hcholast.pythonanywhere.com/chat/${selectedSessionId}`, { message }, {
+      const response = await axios.post(`http://chats-d3hvf0cwgdb2dggr.westeurope-01.azurewebsites.net/chat/${selectedSessionId}`, { message }, {
         headers: { Authorization: `Bearer ${token}` },
       });
 
@@ -113,7 +113,7 @@ function Chats() {
   const handleDeleteSession = async (sessionId) => {
     try {
       const token = localStorage.getItem('token');
-      await axios.delete(`http://hcholast.pythonanywhere.com/delete_session/${sessionId}`, {
+      await axios.delete(`http://chats-d3hvf0cwgdb2dggr.westeurope-01.azurewebsites.net/delete_session/${sessionId}`, {
         headers: { Authorization: `Bearer ${token}` },
       });
 
